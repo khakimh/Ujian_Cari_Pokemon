@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Result</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="http://127.0.0.1:5000/file/index/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="http://127.0.0.1:5000/file/index/all.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://127.0.0.1:5000/file/index/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="http://127.0.0.1:5000/file/index/stylish-portfolio.css" rel="stylesheet">
+  <style type="text/css">
+    body{
+      background-image:url(http://127.0.0.1:5000/file/index/back_pok.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+
+</head>
+
+<body id="page-top">
+  
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class='container text-center my-auto'>
+        </div>
+    <div class="container text-center my-auto">
+        <div class="alert alert-success" role="alert">
+           <h2>{{data['forms'][0]['name'].capitalize()}}</h2>
+          </div>
+          <br><br>
+          <img src="{{data['sprites']['front_default']}}" width="200" height="200">
+          <br><br>
+          <div class="col-xs-2">
+          <div class="alert alert-warning" role="alert">
+            <h6> ID : {{data['id']}}</h6>
+           </div></div>
+           <div class="col-xs-2">
+           <div class="alert alert-success" role="alert">
+            <h6>Height : {{data['height']}}</h6>
+           </div></div>
+           <div class="col-xs-2">
+           <div class="alert alert-warning" role="alert">
+            <h6>Weight : {{data['weight']}}</h6>
+           </div></div>
+           <a class="btn btn-success" href="http://127.0.0.1:5000/"><<&nbsp&nbsp&nbspKembali</a>
+    </div>
+    <div class='container text-center my-auto'>
+    </div>
+
+    <div class="overlay"></div>
+  </header>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="http://127.0.0.1:5000/file/index/jquery.min.js"></script>
+  <script src="http://127.0.0.1:5000/file/index/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="http://127.0.0.1:5000/file/index/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="http://127.0.0.1:5000/file/index/stylish-portfolio.min.js"></script>
+  
+</body>
+</html>
