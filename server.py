@@ -22,8 +22,8 @@ def landing_page2():
 
 @app.route('/hasil', methods = ['GET','POST'])
 def form():
-    data = request.form
-    url = 'https://pokeapi.co/api/v2/pokemon/' + dict(data)['name'].lower()
+    data_f = request.form
+    url = 'https://pokeapi.co/api/v2/pokemon/' + dict(data_f)['name'].lower()
     data = requests.get(url)
     if data.status_code == 404:
         return render_template ('error.html')
